@@ -27,7 +27,7 @@ while True:
 
     if bbox is not None:
         x1, y1, x2, y2 = bbox
-        frame = cv.rectangle(frame, (x1, y1), (x2, y2), (0, 255, 0), 5)
+        frame = cv.rectangle(frame, (x1, y1), (x2, y2), (0, 0, 255), 5)
 
     cv.imshow('frame', frame)
 
