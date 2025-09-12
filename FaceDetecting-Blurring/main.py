@@ -26,7 +26,11 @@ def process_image(img, face_detection):
 
             # blur faces
 
-            img[y1:y1 + h, x1:x1 + w] = cv.blur(img[y1:y1 + h, x1:x1 + w], (30, 30))
+            # img[y1:y1 + h, x1:x1 + w] = cv.blur(img[y1:y1 + h, x1:x1 + w], (30, 30))
+
+            # detect face
+
+            img = cv.rectangle(img, (x1, y1), (x1 + w, y1 + h), (255, 0, 0), 5)
 
     return img
 
